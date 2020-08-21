@@ -1,0 +1,203 @@
+*{
+    
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    width: auto;
+    
+    
+    
+    
+    
+    
+    }
+    body{
+        background-color: black;
+    }
+    header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 50px;
+        z-index: 1000;
+    }
+    header .main{
+        position: relative;
+        font-size: 2em;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+    
+
+    .nav-links{
+        flex: 1;
+     }
+     .nav-links ul li{
+         margin-left:10px;
+         display: inline-block;
+     }
+     .nav-links ul li a{
+         text-decoration: none;
+         color:rgb(255, 254, 254);
+         padding: 8px 25px;
+         transition: 0.6s ease;
+     
+     }
+     .nav-links ul li a:hover{
+         background-color:rgb(5, 162, 224);
+         color: rgb(255, 255, 255);
+     }
+     .nav-links ul li.active a{
+         background-color:rgb(5, 162, 224);
+         color: #000;
+     }
+     .ah{
+        margin-top: 100px;
+     }
+     .ah h1{
+         margin-bottom: 20px;
+     }
+    .hotels{
+        margin-top: 100px;
+    }
+    .hotels h1{
+        margin-bottom: 50px;
+        text-align: left;
+    }
+    .hotels h2{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-size: 30px;
+        font-weight: 400;
+        text-decoration: underline;
+        text-align: center;
+
+    }
+    .hotels h3{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: left;
+    }
+    .hotels ol h3 li{
+        counter-increment: list;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        text-align: left;
+        font-weight: 700;
+  
+    }
+    
+   
+    .hotels p{
+        text-align: center;
+    }
+    .hotels img{
+        width: 100%;
+        
+        
+    }
+    .footer{
+        
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        border-top: 5px solid rgb(5, 162, 224);
+        margin-top: 25px;
+    }
+    .single{
+        width: 33%;
+        float: left;
+        text-align: left;
+        color: #fff;
+    }
+    .single ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .single ul a{
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    .css h2{
+        margin-bottom: 20px;
+        text-align: center;
+        
+    }
+    .css h3{
+        text-align: center;
+
+    }
+    body .btn{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        height: 25vh;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        
+      }
+      span{
+        position: relative;
+        display: inline-flex;
+        width: 180px;
+        height: 55px;
+        margin: 0 15px;
+        perspective: 1000px;
+      }
+      span a{
+        font-size: 19px;
+        letter-spacing: 1px;
+        transform-style: preserve-3d;
+        transform: translateZ(-25px);
+        transition: transform .25s;
+        font-family: 'Montserrat', sans-serif;
+      }
+      span a:before,
+      span a:after{
+        position: absolute;
+        content: "BUTTON";
+        height: 55px;
+        width: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid black;
+        box-sizing: border-box;
+      }
+      span:nth-child(1) a:before{
+        color: #fff;
+        background: #000;
+        transform: rotateY(0deg) translateZ(25px);
+      }
+      span:nth-child(1) a:after{
+        color: #000;
+        transform: rotateX(90deg) translateZ(25px);
+      }
+      span:nth-child(2) a:before{
+        color: #fff;
+        background: black;
+        transform: rotateX(-90deg) translateZ(25px);
+      }
+      span:nth-child(2) a:after{
+        color: #000;
+        transform: rotateY(0deg) translateZ(25px);
+      }
+      span:nth-child(1) a:hover{
+        transform: translateZ(-25px) rotateX(-90deg);
+      }
+      span:nth-child(2) a:hover{
+        transform: translateZ(-25px) rotateX(90deg);
+      }
+      

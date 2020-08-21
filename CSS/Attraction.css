@@ -1,0 +1,144 @@
+*{
+    
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    width: auto;
+    
+    
+    
+    
+    
+    
+    }
+    body{
+        background-color: black;
+    }
+    header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 50px;
+        z-index: 1000;
+    }
+    header .main{
+        position: relative;
+        font-size: 2em;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+    
+
+    .nav-links{
+        flex: 1;
+     }
+     .nav-links ul li{
+         margin-left:10px;
+         display: inline-block;
+     }
+     .nav-links ul li a{
+         text-decoration: none;
+         color:rgb(255, 254, 254);
+         padding: 8px 25px;
+         transition: 0.6s ease;
+     
+     }
+     .nav-links ul li a:hover{
+         background-color:rgb(5, 162, 224);
+         color: rgb(255, 255, 255);
+     }
+     .nav-links ul li.active a{
+         background-color:rgb(5, 162, 224);
+         color: #000;
+     }
+    .best-things{
+        margin-top: 100px;
+        
+    }
+    .best-things h1{
+        margin-bottom: 50px;
+        text-align: left;
+    }
+    .best-things h2{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-size: 30px;
+        font-weight: 400;
+        text-decoration: underline;
+
+    }
+    .best-things h3{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: left;
+    }
+    .best-things ul li{
+        margin-top: 25px;
+        margin-bottom: 25px;
+        text-align: center  ;
+        font-weight: 700;
+    }
+    .best-things p{
+        text-align: center;
+    }
+    .best-things img{
+        width: 100%;
+    }
+    .table-activities{
+        margin-top: 50px;
+        bottom: 50px;
+        
+    }
+    table, td, th {
+        border: 1px solid white;
+        margin-left:auto ;
+        margin-right: auto;
+        
+      }
+      
+    table {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 75%;
+      }
+      
+    th {
+        height: 50px;
+      }
+    th, td{
+          text-align: center;
+      }
+    .footer{
+        
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        border-top: 5px solid rgb(5, 162, 224);
+    }
+    .single{
+        width: 33%;
+        float: left;
+        text-align: left;
+        color: #fff;
+    }
+    .single ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .single ul a{
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    
+    
+    

@@ -1,0 +1,254 @@
+*{
+
+box-sizing: border-box;
+font-family: 'Times New Roman', Times, serif;
+color: white;
+width: auto;
+
+}
+body{
+    background-color: black;
+    
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    z-index: 1000;
+}
+header .main{
+    position: relative;
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+
+.title {
+    
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+.title:before{
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    background:rgba(0,0,0,0.5 );
+}
+.title video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;
+    pointer-events: none;
+
+}
+.title .img-bx video{
+    opacity: 1;
+}
+.title .text-box{
+    position: relative;
+    max-width: 550px;
+    z-index: 2;
+}
+.title .text-box h1{
+    color: white;
+    font-size: 3em;
+}
+.title .text-box h2{
+    font-size: 1.5em;
+    margin: 5px 0 25px;
+}
+.title .img-bx{
+    position: relative;
+    background: #fff;
+    margin-left: 40px;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+
+}
+.title .sci{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title .sci li{
+    list-style: none;
+}
+.title .sci li a{
+    display: inline-block;
+    margin-right: 15px;
+}
+.title .sci li a img{
+    transform: scale(0.5);
+    filter: invert(1);
+    
+
+}
+@media(max-width: 991px){
+    header{
+        padding: 20px 50px;
+    }
+    .title{
+       padding: 150px 50px 0 ;
+    }
+    .title:before{
+        display: none;
+    }
+    .title .text-box{
+        max-width: 100%;
+    }
+    .title .text-box h1{
+        font-size: 2.5em;
+    }
+    .title .img-bx{
+        width: 100%;
+        height: 200px;
+        margin: 40px 0 100px;
+    
+    }
+    .title .sci{
+        left: 50px;
+    }
+    }
+
+
+.nav-links{
+   flex: 1;
+}
+
+.nav-links ul li{
+    margin-left:10px;
+    display: inline-block;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color:rgb(255, 254, 254);
+    padding: 8px 25px;
+    transition: 0.6s ease;
+
+}
+.nav-links ul li a:hover{
+    background-color:rgb(5, 162, 224);
+    color: rgb(255, 255, 255);
+}
+.nav-links ul li.active a{
+    background-color:rgb(5, 162, 224);
+    color: #000;
+}
+.About-us{
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 100px;
+}
+.About-us h2{
+    padding: 50px;
+    width: 80%;
+    min-width: 460px;
+}
+.sub{
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 100px;
+    
+    
+}
+.sub h2{
+    margin-top: auto;
+    padding: 50px;
+    width: 80%;
+    min-width: 460px;
+}
+.sub p{
+    margin-top: 25px;
+}
+.sub ol li{
+    position: relative;
+    margin-bottom: 25px;
+    margin-top: 50px;
+    text-align: left;
+    color: white;
+}
+
+.sub h2{
+    margin-top: auto;
+    padding: 50px;
+    width: 80%;
+    min-width: 460px;
+}
+.sub img{
+    width: 100%;
+}
+.pt li{
+    text-align: left;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.pt li a{
+    margin-bottom: 25px;
+}
+.footer{
+    left: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 5px solid rgb(5, 162, 224);
+}
+.single{
+    width: 33%;
+    float: left;
+    text-align: left;
+    color: #fff;
+}
+.single ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.single ul a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.column img{
+    width: 100%;
+    height: 300px;
+
+}
+.list ol{
+    margin: 0;
+}
